@@ -43,7 +43,6 @@ function save_log_proxy($job, $data=NULL)
 
     curl_close($ch);
 
-    // use CURL to connect to; http://torvpn.com/myip.html   and use proxy and make sure you cant see; 79.98.220.45
     $proxy_block = false;
 
     if (strpos($headers, '79.98.220.45') !== false) {

@@ -23,9 +23,6 @@ function save_log_proxy($job, $data=NULL)
     $flag = 0;
     @$fp = fsockopen($ip, $port, $errno, $errstr, $timeout);
 
-
-    // use CURL to connect to; http://torvpn.com/myip.html   and use proxy and make sure you cant see; 79.98.220.45
-
     if(!empty($fp)) {
         $flag = 1;
         fclose($fp);
